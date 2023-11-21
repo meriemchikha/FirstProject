@@ -1,0 +1,158 @@
+/* Style de la barre de navigation */
+		nav {
+			background-color:chocolate;
+			overflow: hidden;
+		}
+
+		/* Style des liens de la barre de navigation */
+		nav a {
+			float: left;
+			color: #FFEBCD;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		nav>div:last-child {
+			display:flex;
+			justify-content: flex-end;
+		  }
+
+		/* Style des liens de la barre de navigation au survol */
+		nav a:hover {
+			background-color: white;
+			color: black;
+		}
+        /*Style header*/
+        header {
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 300px; 
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			object-fit: cover;
+			 
+		}
+		/* style h1*/
+		 header h1 {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			color: #FFEBCD;
+			font-size: 4vw;
+			};
+
+		/* Style de l'élément principal */
+	
+		main {
+			margin-top: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			 
+
+		}
+		h2 {
+			text-align: center;
+			margin: 4vh;
+			font-size: 1.8vw;
+
+
+		}
+		 ul { 
+			flex-wrap: wrap;
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+			margin: 10px;
+			list-style: none;
+		}
+		ul section1 {
+			background-color: #FFEBCD;
+		}
+		li p {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			
+		}
+
+		/* Style des images */
+		img {
+			width: 300px;
+			height: 200px;
+			margin: 5px;
+		}
+
+		/* Style du texte */
+		p {
+			font-size: 10px;
+			margin: 10px;
+		}
+
+		/* Style du pied de page */
+		footer {
+			background-color:chocolate;
+			color: white;
+			text-align: left;
+			padding: 5px;
+			width: 100%;
+		 height: 30px;
+		
+		 
+		}
+	 
+/* rajout avec youssef */
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+nav {
+	display:flex;
+	justify-content: space-between;
+    align-items: center;
+
+}
+ .nav-right {
+	display:flex;
+	align-items: center;
+	flex-direction: row;
+	
+}
+.nav-left  {
+	display:none
+}
+.nav-left {
+	font-size: 1.2rem;
+	white-space: 1.6;
+}
+.icon-nav {
+	width:30px;
+	height:40px;
+}
+header {
+	background-color: black;
+}
+header img {
+	position: absolute;
+	width: 100%;
+	height:300px;
+	opacity: .3;
+	object-fit: cover;
+}
+header h1 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	z-index:9999;
+	color : #fff
+}
+@media (min-width:769px){
+ .nav-left{
+	display:flex;
+	align-items: center;
+	flex-direction: row;
+	
+}
+}
