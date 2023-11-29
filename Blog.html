@@ -14,83 +14,108 @@
 </head>
 
 <body>
-	<!-- Barre de navigation -->
-	<nav> 
-	<div class="nav-left">
-		<a href="/">Accueil</a>
-		<a href="/Articles.html">Nos produits</a>
-		<a href="/Blog.html">Blog</a>
-		<a href="/Apropos.html">A propos</a>
-	</div>
-	<div class="nav-right">
-		<a href="#">
-			<img class="icon-nav" src="icons/search.svg" alt="icon search">
-		</a>
-		<a href="/connexion.html">
-			<img class="icon-nav" src="icons/user.svg" alt="icon user">
-		</a>
-	<a href="#">
-		<img class="icon-nav" src="icons/cart.svg" alt="icon user">
-	</a>
-	
-	</div>
-    </nav>
+	<!-- Barre de navigation mobile-->
+	<nav class="nav-mobile">
+
+		<button class="close">
+			<img class="close-img" src="icons/close.svg" alt="icon">
+		</button>
+		<div class="nav-mobile-items">
+			<a href="/">Accueil</a>
+			<a href="/Articles.html">Nos produits</a>
+			<a href="/Blog.html">Blog</a>
+			<a href="/Apropos.html">A propos</a>
+		</div>
+	</nav>
+	<!-- Barre de navigation desktop-->
+	<nav class="nav-desktop">
+		<button class="open">
+			<img class="open-img" src="icons/burger.svg" alt="icon">
+		</button>
+		<div class="nav-left">
+			<a href="/">Accueil</a>
+			<a href="/Articles.html">Nos produits</a>
+			<a href="/Blog.html">Blog</a>
+			<a href="/Apropos.html">A propos</a>
+		</div>
+		<div class="nav-right">
+			<a href="chercheRecette.html">
+				<img class="icon-nav" src="icons/search.svg" alt="icon search">
+			</a>
+			<a href="/connexion.html">
+				<img class="icon-nav" src="icons/user.svg" alt="icon user">
+			</a>
+			<a href="/Panier.html">
+				<img class="icon-nav" src="icons/cart.svg" alt="icon user">
+			</a>
+
+		</div>
+	</nav>
 	<header>
-		  <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_231010_www.bing.com.jpeg" alt=""/>
+		  <img src="images/Capture web_19-11-2023_231010_www.bing.com.jpeg" alt=""/>
 	</header>
-  <main>
-	<div>
-		<h1>Recettes les plus populaires</h1></div>
+    <main>
+	     
+		<h1>Recettes les plus populaires</h1>
 
-<div class="recettes">
+        <ul class="recettes">
 
-    <div>
-		<a href="recette1.html">
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_143114_honey.com.jpeg">
-       <p>Café caramel au miel</p></a>
-    </div>
-    <div>
-		<a href="recette2.html">
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_144429_honey.com.jpeg"> 
-        <p>Pain perdu en croûte d'amandes avec ricotta fouettée et miel</p></a>
-    </div>
-    <div>
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_144839_honey.com.jpeg">
-        <p>Les baies et les abeilles</p>
-    </div>
-    <div>
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_14531_honey.com.jpeg">
-       <p>Biscuits à l'avoine et au miel</p>
-    </div>
-    <div>
-	    <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_21446_honey.com.jpeg">
-        <p>Boulettes de poulet au miel chaud</p>
-    </div>
-    <div>
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_21619_honey.com.jpeg">
-	     <p>Gratin de pommes de terre au miel et à la moutarde</p>
-	</div>
-	<div>
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_22519_honey.com.jpeg">
-	     <p>Noeux de pate épicée au beurre de miel et au gruyère</p>
-	</div>
-	<div>
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_145623_honey.com.jpeg">
-	     <p>Macchiato au miel salé</p>
-	</div>
-	<div>
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_22222_honey.com.jpeg">
-	     <p>Latte matcha au miel secoué</p>
-	</div>
-	<div>
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_222928_honey.com.jpeg">
-	     <p>Parfait déjeuner croquant au miel et au yogourt</p>
-	</div>
-	<div>
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_223227_honey.com.jpeg">
-	     <p>Biscuits au pain d'épices au miel</p>
-	</div>
-</div>
+        <li>
+		   <a href="recette1.html">
+		   <img src="images/Capture web_17-11-2023_143114_honey.com.jpeg">
+           <p>Café caramel au miel</p>
+        </li>
+        <li>
+		   <a href="recette2.html">
+		   <img src="images/Capture web_17-11-2023_144429_honey.com.jpeg"> 
+           <p>Pain perdu en croûte d'amandes <p>avec ricotta fouettée et miel</p></p></a>
+        </li>
+        <li>
+		    <a href="recette3.html">
+		    <img src="images/Capture web_17-11-2023_144839_honey.com.jpeg">
+            <p>Les baies et les abeilles</p></a>
+        </li>
+        <li>
+			<a href="recette4.html">
+		    <img src="images/Capture web_17-11-2023_14531_honey.com.jpeg">
+			<p>Biscuits à l'avoine et au miel</p></a>
+        </li>
+        <li>
+			<a href="recette5.html">
+	        <img src="images/Capture web_19-11-2023_21446_honey.com.jpeg">
+            <p>Boulettes de poulet<p> au miel chaud</p></p></a>
+        </li>
+        <li>
+			<a href="recette6.html">
+		    <img src="images/Capture web_19-11-2023_21619_honey.com.jpeg">
+	        <p>Gratin de pommes de terre<p> au miel et à la moutarde</p></p></a>
+	    </li>
+	    <li>
+			<a href="recette7.html">
+		    <img src="images/Capture web_19-11-2023_22519_honey.com.jpeg">
+	        <p>Noeux de pate épicée au beurre <p>de miel et au gruyère</p></p></a>
+	    </li>
+	    <li>
+			<a href="recette8.html">
+		    <img src="images/Capture web_17-11-2023_145623_honey.com.jpeg">
+	        <p>Macchiato au miel salé<p></a>
+	    </li>
+	    <li>
+			<a href="recette9.html">
+		    <img src= "images/Capture web_19-11-2023_22222_honey.com.jpeg">
+	        <p>Latte matcha au miel secoué</p></a>
+	    </li>
+	    <li>
+			<a href="recette10.html">
+		    <img src="images/Capture web_19-11-2023_222928_honey.com.jpeg">
+	        <p>Parfait déjeuner croquant au miel <p>et au yogourt</p></p></a>
+		</li>
+	    <li>
+			<a href="recette11.html">
+		    <img src="images/Capture web_19-11-2023_223227_honey.com.jpeg">
+	        <p>Biscuits au pain d'épices<p> au miel</p></p></a>
+	    </li>
+    </ul>
 </main>
 
 
@@ -98,5 +123,6 @@
 <footer>
 	<p>© 2023 Ma page</p>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>

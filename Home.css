@@ -1,158 +1,221 @@
-/* Style de la barre de navigation */
-		nav {
-			background-color:chocolate;
-			overflow: hidden;
-		}
-
-		/* Style des liens de la barre de navigation */
-		nav a {
-			float: left;
-			color: #FFEBCD;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
-
-		nav>div:last-child {
-			display:flex;
-			justify-content: flex-end;
-		  }
-
-		/* Style des liens de la barre de navigation au survol */
-		nav a:hover {
-			background-color: white;
-			color: black;
-		}
-        /*Style header*/
-        header {
-			background-repeat: no-repeat;
-			background-size: cover;
-			height: 300px; 
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
-			object-fit: cover;
-			 
-		}
-		/* style h1*/
-		 header h1 {
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
-			color: #FFEBCD;
-			font-size: 4vw;
-			};
-
-		/* Style de l'élément principal */
-	
-		main {
-			margin-top: 50px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			 
-
-		}
-		h2 {
-			text-align: center;
-			margin: 4vh;
-			font-size: 1.8vw;
-
-
-		}
-		 ul { 
-			flex-wrap: wrap;
-			display: flex;
-			justify-content: center;
-			flex-direction: row;
-			margin: 10px;
-			list-style: none;
-		}
-		ul section1 {
-			background-color: #FFEBCD;
-		}
-		li p {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			
-		}
-
-		/* Style des images */
-		img {
-			width: 300px;
-			height: 200px;
-			margin: 5px;
-		}
-
-		/* Style du texte */
-		p {
-			font-size: 10px;
-			margin: 10px;
-		}
-
-		/* Style du pied de page */
-		footer {
-			background-color:chocolate;
-			color: white;
-			text-align: left;
-			padding: 5px;
-			width: 100%;
-		 height: 30px;
-		
-		 
-		}
-	 
-/* rajout avec youssef */
 body {
-	font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-nav {
-	display:flex;
-	justify-content: space-between;
+a {
+
+    color: #FFEBCD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* Style des liens de la barre de navigation */
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-right {
+    display: flex;
     align-items: center;
+    flex-direction: row;
+}
+
+
+.nav-mobile {
+    position: absolute;
+    left: -300rem;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    transition: left .5s ease-in-out;
+    z-index: 3;
+}
+
+.nav-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-desktop,
+.nav-mobile {
+    background-color: chocolate;
 
 }
- .nav-right {
-	display:flex;
-	align-items: center;
-	flex-direction: row;
-	
+
+.nav-mobile-items {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.nav-left  {
-	display:none
-}
+
 .nav-left {
-	font-size: 1.2rem;
-	white-space: 1.6;
+    display: none;
 }
+
+.close {
+    align-self: end;
+    margin: 4px 20px;
+}
+
+.open,
+.close {
+    background: transparent;
+    border: none;
+}
+
+.open,
+.open-img,
+.close,
+.close-img {
+    width: 50px;
+    height: 50px;
+}
+
 .icon-nav {
-	width:30px;
-	height:40px;
+    width: 30px;
+    height: 40px;
 }
+
+/*Style header*/
 header {
-	background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    object-fit: cover;
+    background-color: black;
 }
+
 header img {
-	position: absolute;
-	width: 100%;
-	height:300px;
-	opacity: .3;
-	object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    opacity: .3;
+    object-fit: cover;
 }
+
 header h1 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	z-index:9999;
-	color : #fff
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #FFEBCD;
+    font-size: 4vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 1;
+    color: #fff
 }
-@media (min-width:769px){
- .nav-left{
-	display:flex;
-	align-items: center;
-	flex-direction: row;
-	
+
+/* List de produits */
+.products {
+    padding: 15px;
 }
+
+.products-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.products-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.products-lists li {
+    max-width: 400px;
+    padding: 10px;
+    box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.1);
+}
+
+.products-lists li img {
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.products-lists li p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center;
+
+}
+
+/* Mise en forme le p */
+.content {
+    padding: 0 20px;
+    font-size: 1.3rem;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+/* Les recettes */
+.recettes {
+    padding: 0 15px;
+}
+
+.recettes-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px
+}
+
+.recettes-lists li {
+    max-width: 400px;
+}
+
+.recettes-lists li img {
+    width: 100%;
+}
+
+.recettes-lists li p {
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Media query */
+@media (min-width:768px) {
+    .nav-left {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .open {
+        display: none;
+    }
+
 }

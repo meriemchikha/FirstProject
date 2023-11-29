@@ -8,82 +8,99 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="recette1.css">
+    <link rel="stylesheet" href="recette.css">
 
 		
 </head>
 <body>
-	<!-- Barre de navigation -->
-	<nav> 
-	<div class="nav-left">
-		<a href="/">Accueil</a>
-		<a href="/Articles.html">Nos produits</a>
-		<a href="/Blog.html">Blog</a>
-		<a href="/Apropos.html">A propos</a>
-	</div>
-	<div class="nav-right">
-		<a href="#">
-			<img class="icon-nav" src="icons/search.svg" alt="icon search">
-		</a>
-		<a href="/connexion.html">
-			<img class="icon-nav" src="icons/user.svg" alt="icon user">
-		</a>
-	<a href="#">
-		<img class="icon-nav" src="icons/cart.svg" alt="icon user">
-	</a>
-	
-	</div>
-    </nav>
+	<!-- Barre de navigation mobile-->
+	<nav class="nav-mobile">
+
+		<button class="close">
+			<img class="close-img" src="icons/close.svg" alt="icon">
+		</button>
+		<div class="nav-mobile-items">
+			<a href="/">Accueil</a>
+			<a href="/Articles.html">Nos produits</a>
+			<a href="/Blog.html">Blog</a>
+			<a href="/Apropos.html">A propos</a>
+		</div>
+	</nav>
+	<!-- Barre de navigation desktop-->
+	<nav class="nav-desktop">
+		<button class="open">
+			<img class="open-img" src="icons/burger.svg" alt="icon">
+		</button>
+		<div class="nav-left">
+			<a href="/">Accueil</a>
+			<a href="/Articles.html">Nos produits</a>
+			<a href="/Blog.html">Blog</a>
+			<a href="/Apropos.html">A propos</a>
+		</div>
+		<div class="nav-right">
+			<a href="chercheRecette.html">
+				<img class="icon-nav" src="icons/search.svg" alt="icon search">
+			</a>
+			<a href="/connexion.html">
+				<img class="icon-nav" src="icons/user.svg" alt="icon user">
+			</a>
+			<a href="/Panier.html">
+				<img class="icon-nav" src="icons/cart.svg" alt="icon user">
+			</a>
+
+		</div>
+	</nav>
     <header> 
       	<img src="https://s1.1zoom.me/big0/359/396110-sepik.jpg" alt=""/>
 	</header>
 
 	<!-- Élément principal -->
 	<main>
-        <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_144429_honey.com.jpeg">
-        <p>Pain perdu en croûte d'amandes avec ricotta fouettée et miel</p>
+		<h1>Pain perdu en croûte d'amandes avec ricotta fouettée et miel</h1>
+        <img src="images/Capture web_17-11-2023_144429_honey.com.jpeg">
+        
         <p>RENDEMENT : Donne 4 portions</p>
 
             <p>INGRÉDIENTS</p>
             
             <p>Pour la garniture :</p>
             
-            3/4 tasse - fromage ricotta
+           <p> 3/4 tasse - fromage ricotta</p>
             
-            1/4 tasse de fromage à la crème, ramolli
+           <p>1/4 tasse de fromage à la crème, ramolli</p> 
             
-            zeste d'1 orange
+           <p> zeste d'1 orange</p>
             
-            Pour le sirop :
+            <p>Pour le sirop :</p>
             
-            3/4 tasse - miel
+            <p>3/4 tasse - miel</p>
             
-            jus d'1/2 orange
+            <p>jus d'1/2 orange</p>
             
-            1/2 c. à thé - cannelle
+            <p>1/2 c. à thé - cannelle</p>
             
-            Pour le pain perdu :
+            <p>Pour le pain perdu :</p>
             
-            1/2 tasse d’amandes, tranchées
+            <p>1/2 tasse d'amandes, tranchées</p>
             
-            3 - oeufs
+            <p>3 - oeufs</p>
             
-            3/4 tasse - lait
+            <p>3/4 tasse - lait</p>
             
-            Splash - Vanille
+            <p>Splash - Vanille</p>
             
-            pincée - sel
+           <p> pincée - sel</p>
             
-            8 - tranches épaisses de challah ou de pain brioché
+        <p>8 - tranches épaisses de challah ou de pain brioché</p>
             
-            3 cuillères à soupe de beurre</p>
+           <p> 3 cuillères à soupe de beurre</p>
             <p>ITINÉRAIRE</p>
 
                 <p>Préchauffer le four à 350°F.
                 
-                Dans le bol d’un batteur électrique muni du fouet, fouettez la ricotta et le fromage à la crème jusqu’à consistance lisse. Incorporer le zeste d’orange.
+                Dans le bol d'un batteur électrique muni du fouet, fouettez la ricotta et le fromage à la crème jusqu’à consistance lisse. Incorporer le zeste d’orange.
                 
-                Dans un autre petit bol, fouetter le miel, le jus d’orange et la cannelle. Ajouter 3 cuillères à soupe de ce mélange à la ricotta et remuer. Réserver le reste pour la garniture.
+                Dans un autre petit bol, fouetter le miel, le jus d'orange et la cannelle. Ajouter 3 cuillères à soupe de ce mélange à la ricotta et remuer. Réserver le reste pour la garniture.
                 
                 Dans un bol large et peu profond, fouetter ensemble les œufs, le lait, la vanille et le sel.
                 
@@ -93,14 +110,14 @@
                 <p>
                     Faites chauffer une poêle à feu moyen. Faites fondre la moitié du beurre dans la poêle.
 
-Trempez la moitié des tranches de pain dans le mélange d’œufs, en les laissant tremper pendant environ cinq secondes de chaque côté. Placez les deux côtés du pain dans les amandes en les pressant sur le côté. Mettez le pain dans le beurre fondu et faites-le griller jusqu’à ce qu’il soit doré, environ 2-3 minutes de chaque côté. Mettez le pain fini sur une plaque à pâtisserie non graissée.
+                     Trempez la moitié des tranches de pain dans le mélange d'œufs, en les laissant tremper pendant environ cinq secondes de chaque côté. Placez les deux côtés du pain dans les amandes en les pressant sur le côté. Mettez le pain dans le beurre fondu et faites-le griller jusqu’à ce qu’il soit doré, environ 2-3 minutes de chaque côté. Mettez le pain fini sur une plaque à pâtisserie non graissée.
                 </p>
                 <p>
-                    Faites fondre le reste du beurre dans la poêle et répétez l’opération avec les tranches de pain restantes.
+                    Faites fondre le reste du beurre dans la poêle et répétez l'opération avec les tranches de pain restantes.
 
-Faites cuire le pain grillé au four pendant 8 à 10 minutes ou jusqu’à ce qu’il soit bien cuit.
+                   Faites cuire le pain grillé au four pendant 8 à 10 minutes ou jusqu'à ce qu'il soit bien cuit.
 
-Si vous le souhaitez, faites chauffer le mélange de miel sur la cuisinière ou au micro-ondes. Servez les tranches de pain doré avec une cuillerée de ricotta et le miel.
+                  Si vous le souhaitez, faites chauffer le mélange de miel sur la cuisinière ou au micro-ondes. Servez les tranches de pain doré avec une cuillerée de ricotta et le miel.
 
 
                 </p>
@@ -112,5 +129,6 @@ Si vous le souhaitez, faites chauffer le mélange de miel sur la cuisinière ou 
             <footer>
                 <p>© 2023 Ma page</p>
             </footer>
+			<script src="index.js"></script>
             </body>
             </html>

@@ -1,32 +1,109 @@
-/* Style de la barre de navigation */
-nav {
-    background-color:chocolate;
-    overflow: hidden;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Style des liens de la barre de navigation */
-nav a {
-    float: left;
+a {
+
     color: #FFEBCD;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-nav>div:last-child {
-    display:flex;
-    justify-content: flex-end;
-  }
+ul {
+    list-style: none;
+    padding: 0;
+}
 
-/* Style des liens de la barre de navigation au survol */
+
+/* Style des liens de la barre de navigation */
 nav a:hover {
     background-color: white;
     color: black;
 }
-		body {
-			background-color: #f1f1f1;
-		}
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.nav-mobile {
+    position: absolute;
+    left: -300rem;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    transition: left .5s ease-in-out;
+    z-index: 3;
+}
+
+.nav-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-desktop,
+.nav-mobile {
+    background-color: chocolate;
+
+}
+
+.nav-mobile-items {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: none;
+}
+
+.close {
+    align-self: end;
+    margin: 4px 20px;
+}
+
+.open,
+.close {
+    background: transparent;
+    border: none;
+}
+
+.open,
+.open-img,
+.close,
+.close-img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-nav {
+    width: 30px;
+    height: 40px;
+}
+
+/*Style header*/
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    object-fit: cover;
+    background-color: black;
+}
+main{
+	height: 590px;
+}
 		.container {
 			background-color: #fff;
 			border: 3px solid #f1f1f1;
@@ -126,51 +203,32 @@ nav a:hover {
 			clear: both;
 			display: table;
 		}
-		/* rajout avec youssef */
-body {
-	font-family: 'Roboto', sans-serif;
+		.clearfix .psw a{
+			color:blueviolet ;
+		}
+		 
+		/* Style du pied de page */
+footer {
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
 
-nav {
-	display:flex;
-	justify-content: space-between;
-    align-items: center;
+/* Media query */
+@media (min-width:768px) {
+    .nav-left {
+        display: flex;
+        flex-direction: row;
 
-}
- .nav-right {
-	display:flex;
-	align-items: center;
-	flex-direction: row;
-	
-}
-.nav-left  {
-	display:none
-}
-.nav-left {
-	font-size: 1.2rem;
-	white-space: 1.6;
-}
-.icon-nav {
-	width:30px;
-	height:40px;
-}
-
-@media (min-width:769px){
- .nav-left{
-	display:flex;
-	align-items: center;
-	flex-direction: row;
-	
-}
-}
-	 /* Style du pied de page */
-     footer {
-        background-color:chocolate;
-        color: white;
-        text-align: left;
-        padding: 5px;
-        width: 100%;
-     height: 30px;
-     position: absolute; 
-     bottom: 0;
     }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .open {
+        display: none;
+    }
+
+}

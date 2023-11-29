@@ -12,9 +12,24 @@
 		
 </head>
 <body>
-	<script src="ajouterarticles.js"></script>
-	<!-- Barre de navigation -->
-	<nav> 
+	<!-- Barre de navigation mobile-->
+	<nav class="nav-mobile">
+
+		<button class="close">
+			<img class="close-img" src="icons/close.svg" alt="icon">
+		</button>
+		<div class="nav-mobile-items">
+			<a href="/">Accueil</a>
+			<a href="/Articles.html">Nos produits</a>
+			<a href="/Blog.html">Blog</a>
+			<a href="/Apropos.html">A propos</a>
+		</div>
+	</nav>
+	<!-- Barre de navigation desktop-->
+	<nav class="nav-desktop">
+		<button class="open">
+			<img class="open-img" src="icons/burger.svg" alt="icon">
+		</button>
 		<div class="nav-left">
 			<a href="/">Accueil</a>
 			<a href="/Articles.html">Nos produits</a>
@@ -22,21 +37,20 @@
 			<a href="/Apropos.html">A propos</a>
 		</div>
 		<div class="nav-right">
-			<a href="#">
+			<a href="chercheRecette.html">
 				<img class="icon-nav" src="icons/search.svg" alt="icon search">
 			</a>
 			<a href="/connexion.html">
 				<img class="icon-nav" src="icons/user.svg" alt="icon user">
 			</a>
-		<a href="#">
-			<img class="icon-nav" src="icons/cart.svg" alt="icon user">
-		</a>
-		
-		</div>
-		</nav>
+			<a href="/Panier.html">
+				<img class="icon-nav" src="icons/cart.svg" alt="icon user">
+			</a>
 
+		</div>
+	</nav>
 <header> 
-		<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_225457_www.bing.com.jpeg" alt=""/>
+		<img src="images/Capture web_19-11-2023_225457_www.bing.com.jpeg" alt=""/>
 		
 
 	</header>
@@ -49,129 +63,149 @@
 		</div>
 	<main>
 	
-		<div class="section-left">
-			<section>
-				<p>Miel</p>
+	<div class="section-left">
+		<section>
+			<h1>Miel</h1>
+			<form id="productFilterForm">
 				<div>
-					<input type="checkbox" id="Acacia" ><label for="Acacia" >Acacia</label>
+					<input type="checkbox" id="filterByName" name="Acacia" value="true">
+					<label for="filterByName">Acacia</label>
 				</div>
 				<div>
-				<input type="checkbox" id="Chataignier"><label for="Chataignier" >Chataignier</label>
+					<input type="checkbox" id="filterByName" name="Chataignier" value="true">
+					<label for="filterByName">Chataignier</label>
+				</div>
+				<div>
+					<input type="checkbox" id="filterByName" name="Bourdaine" value="true">
+					<label for="filterByName">Bourdaine</label>
+				</div>
+				<div>
+					<input type="checkbox" id="filterByName" name="Montagne" value="true">
+					<label for="filterByName">Montagne</label>
+				</div>
+				<div>
+					<input type="checkbox" id="filterByName" name="Bruyère" value="true">
+					<label for="filterByName">Bruyère</label>
+				</div>
+				<div>
+					<input type="checkbox" id="filterByName" name="Toutes fleurs" value="true">
+					<label for="filterByName">Toutes fleurs</label>
+				</div>
+			    
+	    </section>
+	    <section> 
+	        <h2>Poinds net</h2>
+			<div>
+				<input type="checkbox" id="filterByWeight" name="250" value="true">
+				<label for="filterByWeight">250</label>
 			</div>
 			<div>
-				<input type="checkbox" id="Bourdaine"><label for="Bourdaine" >Bourdainer</label>
-			</div>
-			<div>
-				<input type="checkbox" id="Montagne" checked><label for="Montagne" >Montagne</label>
-			</div>
-			<div>
-				<input type="checkbox" id="Bruyère" checked><label for="Bruyère" >Bruyère</label>
-			</div>
-			<div>
-				<input type="checkbox" id="Toutes fleurs"><label for="Toutes fleurs" >Toutes fleurs</label>
-			</div>
-	</section>
-	
-	<p>
-		Poinds net
-	</p>
-	<div> <input type="checkbox" id="30" checked><label for="30g">30g</label></div>
-	<div> <input type="checkbox" id="100" checked><label for="100g">100g</label></div>
-	<div> <input type="checkbox" id="200" checked><label for="200g">200g</label></div>
-	<div> <input type="checkbox" id="250g" checked><label for="250g">250g</label></div>
-	<div> <input type="checkbox" id="500" checked><label for="500g">500g</label></div>
-	<div>  <input type="checkbox" id="1kg" checked><label for="1kg">1kg</label></div>
-	</section>
+				<input type="checkbox" id="filterByWeight" name="500" value="true">
+				<label for="filterByWeight">500</label>
+			</div>   
+	        <div>
+				<input type="checkbox" id="filterByWeight" name="1kg" value="true">
+				<label for="filterByWeight">1kg</label>
+			</div> 
+	           
+	    </section>
+		<button type="submit">Afficher</button>
 	</div>
-	<div class="section-right"> 
-		<article> 
-			
-			<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_10611_www.miel-lacourcelle.fr.jpeg">
-			<h>Miel de bourdaine Bio origine France - pot de 250 g</h>
-			<p>Prix :6,50 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-		<article>
-			 <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_11037_www.miel-lacourcelle.fr.jpeg">
-			<h>Miel d'acacia Bio origine France - pot de 500 g</h>
-			<p>Prix :14,00 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-		<article>
-			<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_93212_www.miel-lacourcelle.fr.jpeg">
-		    <h>Miel de bourdaine Bio origine France - pot de 500 g</h>
-			<p>Prix :12,70 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-		<article>
-			<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_102743_www.miel-lacourcelle.fr.jpeg">
-		    <h>Miel de montagne Bio origine France - pot de 1 kg</h>
-			<p>Prix :23,90 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-		<article>
-			<img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_17-11-2023_103116_www.miel-lacourcelle.fr.jpeg">
-			<h>Miel de chataignier Bio origine France - pot de 250 g</h>
+
+		<article class ="product"> 
+			<div>
+			<img src="images/Capture web_17-11-2023_10611_www.miel-lacourcelle.fr.jpeg"  alt="product 1">
+			<div class="nom">Miel de bourdaine Bio origine France - pot de 250 g</div>
+			<p>Prix : <span id="prix1"> 6.50 €</span></p>
+		    <button id="img-0" type="button" class="add">Ajouter au panier</button>
+		    </div>
+		 
+			<div>
+			 <img src="images/Capture web_17-11-2023_11037_www.miel-lacourcelle.fr.jpeg" alt="product 2">
+			 <div class="nom">Miel d'acacia Bio origine France - pot de 500 g</p></div>
+			 <p>Prix : <span id="prix2"> 14,00 €</span></p>
+			<button id="img-1" type="button" class="add">Ajouter au panier</button>
+		    </div>
+		 
+		     <div> 
+			<img src="images/Capture web_17-11-2023_93212_www.miel-lacourcelle.fr.jpeg" alt="product 3">
+		    <p>Miel de bourdaine Bio origine France - pot de 500 g</p>
+			<p>Prix : <span id="prix3">12,70 €</span></p>
+			<button id="img-2" type="button" class="add">Ajouter au panier</button>
+		   </div> 
+		   <div>
+			<img src=" images/Capture web_17-11-2023_102743_www.miel-lacourcelle.fr.jpeg" alt="product 4">
+		    <p>Miel de montagne Bio origine France - pot de 1 kg</p>
+			<p>Prix : <span id="prix4">23,90 €</span></p>
+			<button id="img-3"  type="button" class="add">Ajouter au panier</button>
+		</div>
+		<div>
+			<img src="images/Capture web_17-11-2023_103116_www.miel-lacourcelle.fr.jpeg">
+			<p>Miel de chataignier Bio origine France - pot de 250 g</p>
 			<p>Prix :7,30 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
+			<button id="img-4" type="button" class="add">Ajouter au Panier</button>
+		</div>
 	
-		<article>
-		    <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_15346_www.miel-lacourcelle.fr.jpeg">
-            <h>Miel de bruyère Bio origine France - pot de 250 g </h>
+		 <div>
+		    <img src="images/Capture web_19-11-2023_15346_www.miel-lacourcelle.fr.jpeg">
+            <p>Miel de bruyère Bio origine France - pot de 250 g </p>
 			 <p>Prix :8,50 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-
-        <article>
-		    <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_15376_www.miel-lacourcelle.fr.jpeg">
-            <h>Miel de chataignier Bio origine France - pot de 500 g </h>
+			<button id="img-5"  type="button" class="add">Ajouter au Panier</button>
+		</div>	
+		 <div>
+		    <img src="images/Capture web_19-11-2023_15376_www.miel-lacourcelle.fr.jpeg">
+            <p>Miel de chataignier Bio origine France - pot de 500 g </p>
 			 <p>Prix :13,50 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-		<article>
-		    <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_154024_www.miel-lacourcelle.fr.jpeg">
-            <h> Miel toutes fleurs Bio origine France - pot de 500 g </h>
+			<button id="img-6" type="button" class="add">Ajouter au Panier</button>
+		</div>	
+		 <div>
+		    <img src="images/Capture web_19-11-2023_154024_www.miel-lacourcelle.fr.jpeg">
+            <p> Miel toutes fleurs Bio origine France - pot de 500 g </p>
 			 <p>Prix :11,40 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-		<article>
-		    <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_154024_www.miel-lacourcelle.fr.jpeg">
-            <h> Miel de montagne Bio origine France - pot de 250 g</h>
+			<button id="img-7"  type="button" class="add">Ajouter au Panier</button>
+		</div>	
+		 <div>
+		    <img src="images/Capture web_19-11-2023_154024_www.miel-lacourcelle.fr.jpeg">
+            <p> Miel de montagne Bio origine France - pot de 250 g</p>
 			 <p>Prix :6,50 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-		<article>
-		    <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_154625_www.miel-lacourcelle.fr.jpeg">
-            <h> Miel d'acacia Bio origine France - pot de 1 kg</h>
+			<button id="img-8" type="button" class="add">Ajouter au Panier</button>
+		</div>
+		 <div>
+		    <img src="images/Capture web_19-11-2023_154625_www.miel-lacourcelle.fr.jpeg">
+            <p> Miel d'acacia Bio origine France - pot de 1 kg</p>
 			 <p>Prix :22.95 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-		<article>
-		    <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_154752_www.miel-lacourcelle.fr.jpeg">
-            <h> Miel toutes fleurs Bio origine France - pot de 1 kg</h>
+			<button id="img-9" type="button" class="add">Ajouter au Panier</button>
+		</div>
+		 <div>
+		    <img src="images/Capture web_19-11-2023_154752_www.miel-lacourcelle.fr.jpeg">
+            <p> Miel toutes fleurs Bio origine France - pot de 1 kg</p>
 			 <p>Prix :18.27 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-		<article>
-		    <img src="C:\Users\chikh\OneDrive\Bureau\project\images\Capture web_19-11-2023_161038_www.miel-lacourcelle.fr.jpeg">
-            <h>Pack découverte (4x250g) </h>
+			<button id="img-10" type="button" class="add">Ajouter au Panier</button>
+		</div>
+		 <div>
+		    <img src="images/Capture web_19-11-2023_161038_www.miel-lacourcelle.fr.jpeg">
+            <p>Pack découverte (4x250g) </p>
 			 <p>Prix :26,20 €</p>
-			<button>Ajouter au Panier</button>
-		</article>
-		
-		
-
-		 
-		 
-	</div>
-	
-
+			 <button id="img-11"  type="button" class="add" >
+				Ajouter au panier
+			</button>
+		</div>
+		</article>	 
  
-	</main>
+	
+    <!-- Panier (vide au départ) -->
+    <div id="panier">
+        <h3>Panier</h3>
+        <ul id="products-list"></ul>
+	</div>
+</main>
 	<!-- Pied de page -->
 <footer>
     <p>© 2023 Ma page</p>
 </footer>
+<script src="index.js"></script>
+<script src="articles.js"></script>
+<script src="filtrerProduits.js"></script>
+<script src="search.js"></script>
 </body>
 </html>

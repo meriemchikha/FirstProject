@@ -13,48 +13,64 @@
 </head>
 
 <body>
-    <script src="panier.js"></script>
-	<!-- Barre de navigation -->
-	<nav> 
-	<div class="nav-left">
-		<a href="/">Accueil</a>
-		<a href="/Articles.html">Nos produits</a>
-		<a href="/Blog.html">Blog</a>
-		<a href="/Apropos.html">A propos</a>
-	</div>
-	<div class="nav-right">
-		<a href="#">
-			<img class="icon-nav" src="icons/search.svg" alt="icon search">
-		</a>
-		<a href="/connexion.html">
-			<img class="icon-nav" src="icons/user.svg" alt="icon user">
-		</a>
-	<a href="#">
-		<img class="icon-nav" src="icons/cart.svg" alt="icon user">
-	</a>
-	
-	</div>
-    </nav>
-     
+	<!-- Barre de navigation mobile-->
+	<nav class="nav-mobile">
+
+		<button class="close">
+			<img class="close-img" src="icons/close.svg" alt="icon">
+		</button>
+		<div class="nav-mobile-items">
+			<a href="/">Accueil</a>
+			<a href="/Articles.html">Nos produits</a>
+			<a href="/Blog.html">Blog</a>
+			<a href="/Apropos.html">A propos</a>
+		</div>
+	</nav>
+	<!-- Barre de navigation desktop-->
+	<nav class="nav-desktop">
+		<button class="open">
+			<img class="open-img" src="icons/burger.svg" alt="icon">
+		</button>
+		<div class="nav-left">
+			<a href="/">Accueil</a>
+			<a href="/Articles.html">Nos produits</a>
+			<a href="/Blog.html">Blog</a>
+			<a href="/Apropos.html">A propos</a>
+		</div>
+		<div class="nav-right">
+			<a href="chercheRecette.html">
+				<img class="icon-nav" src="icons/search.svg" alt="icon search">
+			</a>
+			<a href="/connexion.html">
+				<img class="icon-nav" src="icons/user.svg" alt="icon user">
+			</a>
+			<a href="/Panier.html">
+				<img class="icon-nav" src="icons/cart.svg" alt="icon user">
+			</a>
+
+		</div>
+	</nav>
     <header>
         <img src="https://s1.1zoom.me/big0/359/396110-sepik.jpg" alt=""/>
       
     </header>
     <main>
-        <!-- Ici, vous pouvez afficher les articles ajoutés au panier -->
-        <!-- Par exemple : -->
+         
         <h1>Mon Panier</h1>
-        <div class="item">
-            <span>Nom du produit</span>
-            <span>Prix</span>
-            <span>Quantité</span>
-        </div>
+        <div id="panier">
+			<h3>Panier</h3>
+			<ul id="listePanier"></ul>
+			<p>Total : <span id="totalPanier">0 €</span></p>
+		</div>
         <button id="checkout">Passer la commande</button>
     </main>
     <!-- Pied de page -->
 	<footer>
 		<p>© 2023 Ma page</p>
 	</footer>
-   
+	<!-- Script -->
+	<script src="index.js"></script>
+	<script src="ajouterproduit.js"></script>
 </body>
+
 </html>
