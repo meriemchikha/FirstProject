@@ -31,3 +31,27 @@
 //     const productList = document.getElementById("productList");
 //     productList.innerHTML = filteredProducts.map(product => `<p>${product.name} (${product.weight} g)</p>`).join("");
 // });
+const cardLists = document.querySelectorAll('.card');
+const formWithHoney = document.querySelector("#productFilterForm")
+let items = []
+
+formWithHoney.addEventListener("change", (e) => {
+    const inputSelected = e.target.name.toLowerCase()
+    if (!items.includes(inputSelected)) {
+        items.push(inputSelected);
+    } else {
+        items = items.filter((item) => item !== inputSelected)
+    }
+
+    if (items.length === 0) {
+        cardLists.forEach((card) => {
+            card.style.display = "block";
+        });
+    } else {
+        cardLists.forEach((card) => {
+            const cardContent = card.textContent.toLowerCase();
+            const isExist = items.some(item => cardContent.includes(item));
+            card.style.display = isExist ? "block" : "none";
+        });
+    }
+})
